@@ -22,4 +22,4 @@ jobs:
       run: gcloud builds submit --tag gcr.io/cs7346-assignment-3/simple_webserver
         
     - name: 'Deploy to Cloud Run and Run under a Dedicated Service Account'
-      run: gcloud run deploy simple_webserver --image=gcr.io/cs7346-assignment-3/simple_webserver:latest --region=us-central1 --service-account github-test@cs7346-assignment-3.iam.gserviceaccount.com
+      run: gcloud run deploy simple_webserver --image=gcr.io/cs7346-assignment-3/simple-webserver:latest --region=us-central1 --service-account github-test@cs7346-assignment-3.iam.gserviceaccount.com
